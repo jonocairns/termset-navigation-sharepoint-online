@@ -159,7 +159,8 @@ Hcf.Util.Termset = Hcf.Util.Termset || {};
     };
 
     module.renderTerm = function renderTerm(term) {
-        var downArrow = term.children && term.children.length && term.children.length > 0 ? '<img src="https://hawkinsgroup.sharepoint.com/SiteAssets/down-arrow.jpg" border="0">': '';
+        var downArrowImage = ''; // check a img here for a down arrow
+        var downArrow = term.children && term.children.length && term.children.length > 0 ? downArraowImage: '';
         var html = '<li><a title="' + term.title + '" href=\'' + term.link + '\'>' + term.title + downArrow + '</a>';
 
         if (term.children && term.children.length) {
